@@ -90,7 +90,6 @@ public class InstagramHomeActivity extends AppCompatActivity {
 
                             if(dataSnapshot.hasChild(uid)){
 
-
                             }else{
                                 moveToActivity(UserProfileActivity.class);
                             }
@@ -141,7 +140,7 @@ public class InstagramHomeActivity extends AppCompatActivity {
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
         mauth = FirebaseAuth.getInstance();
-        mdatabaseReference = FirebaseDatabase.getInstance().getReference().child("users");
+        mdatabaseReference = FirebaseDatabase.getInstance().getReference().child("user_profiles");
     }
 
 
@@ -160,7 +159,10 @@ public class InstagramHomeActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_signout) {
+            moveToActivity(MainActivity.class);
+            mauth.signOut();
+
             return true;
         }
 

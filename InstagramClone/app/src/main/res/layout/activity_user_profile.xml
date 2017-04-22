@@ -19,13 +19,13 @@
         >
 
         <ImageView
-            android:contentDescription="@string/insertImage"
+            android:id="@+id/profile_picture_user"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@mipmap/upload_image"
-            android:scaleType="centerCrop"
+            android:contentDescription="@string/insertImage"
 
-            />
+            android:scaleType="centerCrop" />
 
     </LinearLayout>
 
@@ -37,7 +37,7 @@
 
         <EditText
             android:id="@+id/username_text_profile"
-            style="@style/textstyle"
+            android:textAppearance="@style/textstyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
@@ -47,7 +47,6 @@
             android:background="@drawable/fill_shape"
             android:ems="10"
             android:hint="User Name"
-            android:inputType="textEmailAddress"
             android:paddingBottom="15dp"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
@@ -55,8 +54,8 @@
             android:textColorHint="@color/colorHint" />
 
         <EditText
-            android:id="@+id/password_text_userprofile"
-            style="@style/textstyle"
+            android:id="@+id/status_text_userprofile"
+             android:textAppearance="@style/textstyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
@@ -65,8 +64,7 @@
             android:layout_weight="1"
             android:background="@drawable/fill_shape"
             android:ems="10"
-            android:hint="PASSWORD"
-            android:inputType="textPassword"
+            android:hint="STATUS"
             android:paddingBottom="15dp"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
@@ -76,7 +74,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/save_userprofile_button"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="55dp"
@@ -91,7 +89,7 @@
         android:paddingTop="5dp">
 
         <TextView
-            android:id="@+id/signup_button_signup"
+            android:id="@+id/save_userprofile_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
