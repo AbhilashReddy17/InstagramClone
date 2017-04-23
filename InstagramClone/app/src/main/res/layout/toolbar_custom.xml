@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_custom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_google_signin_btn_text_light_disabled">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/send_toolbar_custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@android:drawable/ic_menu_send"
+            android:tint="@color/common_google_signin_btn_text_light_default" />
+
+        <ImageButton
+            android:id="@+id/post_toolbar_custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/home_toolbar_custom"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/home_toolbar_custom"
+            android:src="@android:drawable/ic_menu_camera"
+            android:tint="@color/common_google_signin_btn_text_light_default" />
+
+        <ImageView
+            android:id="@+id/home_toolbar_custom"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/instagram_title_image" />
+    </RelativeLayout>
+
+
+</android.support.v7.widget.Toolbar>
